@@ -12,6 +12,7 @@ This template includes the following out of the box:
   - `prettier-plugin-tailwindcss` included!
 - HeadlessUI
 - HeroIcons
+- clsx
 
 ## Getting Started
 
