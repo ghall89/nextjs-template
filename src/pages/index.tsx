@@ -1,43 +1,13 @@
-import Image from 'next/image';
-import { GlobeAltIcon } from '@heroicons/react/24/outline';
+import { Globe } from 'lucide-react';
 
-const docs: {
-  label: string;
-  href: string;
-  description: string;
-}[] = [
-  {
-    label: 'NextJS',
-    href: 'https://nextjs.org/docs',
-    description: 'Full-stack framework for building web apps',
-  },
-  {
-    label: 'Tailwind',
-    href: 'https://tailwindcss.com/',
-    description: 'Library of configurable utility classes',
-  },
-  {
-    label: 'clsx',
-    href: 'https://github.com/lukeed/clsx',
-    description: 'Utility for conditional classNames',
-  },
-  {
-    label: 'HeadlessUI',
-    href: 'https://headlessui.com/',
-    description: 'Unstyled UI components built for Tailwind ',
-  },
-  {
-    label: 'HeroIcons React',
-    href: 'https://github.com/tailwindlabs/heroicons#react',
-    description: 'A library of SVG icons as react components',
-  },
-];
+import LinkBox from '@/components/LinkBox';
+import { docs } from '@/lib/docs';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-4 p-24 text-center">
       <h1 className="group">
-        <GlobeAltIcon className="mx-auto size-10 text-blue-700 transition-colors group-hover:text-green-700" />
+        <Globe className="mx-auto size-10 text-blue-700 transition-colors group-hover:text-green-700" />
         Hello World!
       </h1>
       <p>
@@ -53,15 +23,12 @@ export default function Home() {
       </p>
       <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {docs.map((doc) => (
-          <a
+          <LinkBox
             key={doc.label}
             href={doc.href}
-            target="_blank"
-            className="rounded-xl border-2 border-gray-200 bg-white px-3 py-6 text-black shadow-sm transition-transform hover:bg-gray-50 hover:text-gray-700 active:scale-95"
-          >
-            <h2> {doc.label}</h2>
-            <p>{doc.description}</p>
-          </a>
+            label={doc.label}
+            description={doc.description}
+          />
         ))}
       </div>
     </main>
