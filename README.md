@@ -17,19 +17,19 @@ This template includes the following out of the box:
 ## Getting Started
 
 1. **Create Project:**
-   To create a new NextJS project with this template, run `bunx create-next-app -e https://github.com/ghall89/nextjs-template my-project-name`.
+   To create a new NextJS project with this template, run `pnpx create-next-app -e https://github.com/ghall89/nextjs-template my-project-name`.
 
 2. **Install Dependencies:**
-   Navigate to the new directory and install the project dependencies by running `bun install`
+   Navigate to the new directory and install the project dependencies by running `pnpm install`
 
 3. **Start the Development Server:**
-   Run `bun run dev` to start the development server. This will open your browser at `http://localhost:3000/`, where you can see the live preview of your app.
+   Run `pnpm run dev` to start the development server. This will open your browser at `http://localhost:3000/`, where you can see the live preview of your app.
 
 4. **Customize Configuration:**
    You can customize this template according to your requirements by editing the configuration files in the `next.config.js` and `tailwind.config.js` files.
 
 5. **Building for Production:**
-   To build your application for production, run `bun run build`. The output will be stored in the `out/` directory.
+   To build your application for production, run `pnpm run build`. The output will be stored in the `out/` directory.
 
 ## Contributing
 
