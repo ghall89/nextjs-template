@@ -2,17 +2,20 @@
 
 This is a simple template that you can use to start a new Next.js project, with some of my preferred dependencies included. It includes all the necessary dependencies and configurations to get started quickly.
 
-## Features
+## What's Included
 
-This template includes the following out of the box:
+This template includes the following packages:
 
-- TypeScript
-- ESLint and Prettier configs
 - TailwindCSS
-  - `prettier-plugin-tailwindcss` included!
 - HeadlessUI
-- HeroIcons
+- Lucide Icons
+- Motion
 - clsx
+- Tanstack Query
+- Dexie
+- Yup
+
+In addition, ESLint and Prettier are included, with my preferred configuration and plugins for each.
 
 ## Getting Started
 
